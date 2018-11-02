@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>assignment_6_register</title>
+    <link rel="stylesheet" type="text/css" href="css/kinglib_6.css">
+</head>
+<body>
+<div id="logo">
+	<img src="http://profperry.com/Classes20/PHPwithMySQL/KingLibLogo.jpg" alt="King Real Estate Logo">
+</div>
+<div id="patron">
+	<form action="assignment_6_add_patron.php" method="post" id="myform" name="myform">
+		<p>Please sign up</p>
+
+		<p>First Name:<br>
+		<input type="text" name="firstname" id="firstname" size="25">
+		</p>
+
+		<p>Last Name:<br>
+		<input type="text" name="lastname" id="lastname" size="25">
+		</p>
+
+		<p>Email:<br>
+		<input type="email" name="email" id="email" size="35">
+        </p>
+        
+        <p>Birth Year:<br>
+        <input type="text" name="birthyear" id="birthyear" size="4">
+        </p>
+
+		<p>City of Residence<br>
+		<select name="city" id="city" size="1" >
+		<option value="-">-</option>
+		<option value="Chicago">Chicago</option>
+		<option value="Detroit">Detroit</option>
+		<option value="Toronto">Toronto</option>
+		</select>
+		</p>
+
+		<p>
+            <input type="submit" id="addpatron" name="submit" value="Add Patron">
+            <p>For Admin Use Only: <a href="assignment_6_view_patron.php">View Patrons</a>
+		</p>
+	</form>
+	</div>
+</div>
+</body>
+</html>
